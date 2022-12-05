@@ -1,0 +1,116 @@
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<div class="logo"></div>
+
+
+<div class="login-block">
+    <h1>Register</h1>
+    <input type="text" value="" placeholder="Username" id="username" />
+    <input type="number" value="" placeholder="age" id="age" />
+
+    <select name="gender" id="gender">
+        <option value="M">male</option>
+        <option value="F">female</option>
+    </select>
+    <br></br>
+    <h2>location</h2>
+    <div class="form-group">
+        <input type="text" value="" placeholder="latitude" id="latitude" />
+        <input type="text" value="" placeholder="longitude" id="longitude" />
+    </div>
+    <h2>items</h2>
+    <input type="number" value="" placeholder="Water" id="Water" />
+    <input type="number" value="" placeholder="Food" id="Food" />
+    <input type="number" value="" placeholder="Medication" id="Medication" />
+    <input type="number" value="" placeholder="Ammunition" id="Ammunition" />
+    <button>Submit</button>
+</div>
+<style>
+    body {
+        background: url('https://i.imgur.com/wDKmpcA.jpeg') no-repeat fixed center center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .login-block {
+        width: 320px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        border-top: 5px solid #F3030F;
+        margin: 0 auto;
+    }
+    
+    .login-block h1 {
+        text-align: center;
+        color: #000;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    .login-block h2 {
+        text-align: center;
+        color: #000;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    .login-block input {
+        width: 100%;
+        height: 42px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-family: Montserrat;
+        padding: 0 20px 0 50px;
+        outline: none;
+    }
+    
+    .login-block input#username {
+        background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+        background-size: 16px 80px;
+    }
+    
+    .login-block input#username:focus {
+        background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+        background-size: 16px 80px;
+    }
+    
+    .login-block input:active,
+    .login-block input:focus {
+        border: 1px solid red;
+    }
+    
+    .login-block button {
+        width: 100%;
+        height: 40px;
+        background-color: red;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid rgb(15, 211, 32);
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: Montserrat;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .login-block button:hover {
+        background: rgb(15, 211, 32);
+    }
+    
+    select {
+        background: transparent;
+        border-radius: 5px;
+        font-size: 14px;
+        height: 40px;
+        padding: 0 20px 0 50px;
+        width: 320px;
+    }
+</style>
